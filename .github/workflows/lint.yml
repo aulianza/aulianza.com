@@ -1,0 +1,80 @@
+name: Code Check
+on:
+  push:
+    branches:
+      - master
+  pull_request: {}
+
+concurrency:
+  group: ${{ github.job }}-${{ github.ref }}
+  cancel-in-progress: true
+
+jobs:
+  lint:
+    name: ⬣ ESLint
+    runs-on: ubuntu-latest
+    steps:
+      - name: ⬇️ Checkout repo
+        uses: actions/checkout@v2
+
+      - name: 🛠 Setup node
+        uses: actions/setup-node@v3
+        with:
+          node-version: 16
+
+      - name: 🛠 Setup pnpm
+        uses: pnpm/action-setup@v2
+        with:
+          version: 8
+
+      - name: 📥 Instal dependencies
+        run: pnpm install
+
+      - name: 🔬 Lint
+        run: pnpm lint
+
+  typecheck:
+    name: ʦ TypeScript
+    runs-on: ubuntu-latest
+    steps:
+      - name: ⬇️ Checkout repo
+        uses: actions/checkout@v2
+
+      - name: 🛠 Setup node
+        uses: actions/setup-node@v3
+        with:
+          node-version: 16
+
+      - name: 🛠 Setup pnpm
+        uses: pnpm/action-setup@v2
+        with:
+          version: 8
+
+      - name: 📥 Instal dependencies
+        run: pnpm install
+
+      - name: 🔎 Type check
+        run: pnpm typecheck
+
+  prettier:
+    name: 💅 Prettier
+    runs-on: ubuntu-latest
+    steps:
+      - name: ⬇️ Checkout repo
+        uses: actions/checkout@v2
+
+      - name: 🛠 Setup node
+        uses: actions/setup-node@v3
+        with:
+          node-version: 16
+
+      - name: 🛠 Setup pnpm
+        uses: pnpm/action-setup@v2
+        with:
+          version: 8
+
+      - name: 📥 Instal dependencies
+        run: pnpm install
+
+      - name: 💅 Prettier check
+        run: pnpm format:check

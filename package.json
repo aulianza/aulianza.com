@@ -7,7 +7,7 @@
     "build": "next build",
     "start": "next start",
     "lint": "next lint",
-    "lint:fix": "eslint src --fix && yarn format",
+    "lint:fix": "eslint src --fix && pnpm format",
     "typecheck": "tsc --noEmit --incremental false",
     "format": "prettier --write .",
     "format:check": "prettier -c .",
