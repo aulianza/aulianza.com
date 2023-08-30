@@ -10,40 +10,16 @@ concurrency:
   cancel-in-progress: true
 
 jobs:
-  setup:
-    name: ⚙️ Setup
-    runs-on: ubuntu-latest
-    steps:
-      - name: ⬇️ Checkout repo
-        uses: actions/checkout@v2
-
-      - name: ⎔ Setup node and pnpm
-        uses: actions/setup-node@v2
-        with:
-          node-version: 16
-
-      - name: 📥 Install pnpm
-        run: npm install -g pnpm
-
-      - name: 📤 Cache pnpm binaries
-        uses: actions/cache@v2
-        with:
-          path: ~/.pnpm-store
-          key: pnpm-${{ runner.os }}-${{ hashFiles('**/pnpm-lock.yaml') }}
-
   lint:
     name: ⬣ ESLint
     runs-on: ubuntu-latest
-    needs: setup
+    container: aulianza-com:latest
     steps:
       - name: ⬇️ Checkout repo
         uses: actions/checkout@v2
 
-      - name: 📥 Restore pnpm binaries cache
-        uses: actions/cache@v2
-        with:
-          path: ~/.pnpm-store
-          key: pnpm-${{ runner.os }}-${{ hashFiles('**/pnpm-lock.yaml') }}
+      - name: 📥 Install dependencies
+        run: pnpm install
 
       - name: 🔬 Lint
         run: pnpm lint
@@ -51,16 +27,13 @@ jobs:
   typecheck:
     name: ʦ TypeScript
     runs-on: ubuntu-latest
-    needs: setup
+    container: aulianza-com:latest
     steps:
       - name: ⬇️ Checkout repo
         uses: actions/checkout@v2
 
-      - name: 📥 Restore pnpm binaries cache
-        uses: actions/cache@v2
-        with:
-          path: ~/.pnpm-store
-          key: pnpm-${{ runner.os }}-${{ hashFiles('**/pnpm-lock.yaml') }}
+      - name: 📥 Install dependencies
+        run: pnpm install
 
       - name: 🔎 Type check
         run: pnpm typecheck
@@ -68,16 +41,13 @@ jobs:
   prettier:
     name: 💅 Prettier
     runs-on: ubuntu-latest
-    needs: setup
+    container: aulianza-com:latest
     steps:
       - name: ⬇️ Checkout repo
         uses: actions/checkout@v2
 
-      - name: 📥 Restore pnpm binaries cache
-        uses: actions/cache@v2
-        with:
-          path: ~/.pnpm-store
-          key: pnpm-${{ runner.os }}-${{ hashFiles('**/pnpm-lock.yaml') }}
+      - name: 📥 Install dependencies
+        run: pnpm install
 
       - name: 💅 Prettier check
         run: pnpm format:check
