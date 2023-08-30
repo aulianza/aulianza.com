@@ -10,16 +10,54 @@ concurrency:
   cancel-in-progress: true
 
 jobs:
+  setup:
+    name: ⚙️ Setup
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v3
+
+      - name: Install Node.js
+        uses: actions/setup-node@v3
+        with:
+          node-version: 16
+
+      - uses: pnpm/action-setup@v2
+        name: Install pnpm
+        with:
+          version: 7
+          run_install: false
+
+      - name: Get pnpm store directory
+        shell: bash
+        run: |
+          echo "STORE_PATH=$(pnpm store path --silent)" >> $GITHUB_ENV
+
+      - uses: actions/cache@v3
+        name: Setup pnpm cache
+        with:
+          path: ${{ env.STORE_PATH }}
+          key: ${{ runner.os }}-pnpm-store-${{ hashFiles('**/pnpm-lock.yaml') }}
+          restore-keys: |
+            ${{ runner.os }}-pnpm-store-
+
+      - name: Install dependencies
+        run: pnpm install
+
   lint:
     name: ⬣ ESLint
     runs-on: ubuntu-latest
-    container: aulianza-com:latest
+    needs: setup
     steps:
       - name: ⬇️ Checkout repo
         uses: actions/checkout@v2
 
-      - name: 📥 Install dependencies
-        run: pnpm install
+      - name: 📥 Restore pnpm binaries cache
+        uses: actions/cache@v3
+        with:
+          path: ~/.pnpm-store
+          key: pnpm-${{ runner.os }}-${{ hashFiles('**/pnpm-lock.yaml') }}
 
       - name: 🔬 Lint
         run: pnpm lint
@@ -27,13 +65,16 @@ jobs:
   typecheck:
     name: ʦ TypeScript
     runs-on: ubuntu-latest
-    container: aulianza-com:latest
+    needs: setup
     steps:
       - name: ⬇️ Checkout repo
         uses: actions/checkout@v2
 
-      - name: 📥 Install dependencies
-        run: pnpm install
+      - name: 📥 Restore pnpm binaries cache
+        uses: actions/cache@v3
+        with:
+          path: ~/.pnpm-store
+          key: pnpm-${{ runner.os }}-${{ hashFiles('**/pnpm-lock.yaml') }}
 
       - name: 🔎 Type check
         run: pnpm typecheck
@@ -41,13 +82,16 @@ jobs:
   prettier:
     name: 💅 Prettier
     runs-on: ubuntu-latest
-    container: aulianza-com:latest
+    needs: setup
     steps:
       - name: ⬇️ Checkout repo
         uses: actions/checkout@v2
 
-      - name: 📥 Install dependencies
-        run: pnpm install
+      - name: 📥 Restore pnpm binaries cache
+        uses: actions/cache@v3
+        with:
+          path: ~/.pnpm-store
+          key: pnpm-${{ runner.os }}-${{ hashFiles('**/pnpm-lock.yaml') }}
 
       - name: 💅 Prettier check
         run: pnpm format:check
