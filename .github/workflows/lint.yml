@@ -10,17 +10,28 @@ concurrency:
   cancel-in-progress: true
 
 jobs:
-  lint:
-    name: ⬣ ESLint
+  setup:
+    name: ⚙️ Setup
     runs-on: ubuntu-latest
     steps:
       - name: ⬇️ Checkout repo
         uses: actions/checkout@v2
 
-      - name: ⎔ Setup node
+      - name: ⎔ Setup node and pnpm
         uses: actions/setup-node@v2
         with:
           node-version: 16
+
+      - name: 📥 Install pnpm
+        run: npm install -g pnpm
+
+  lint:
+    name: ⬣ ESLint
+    runs-on: ubuntu-latest
+    needs: setup
+    steps:
+      - name: ⬇️ Checkout repo
+        uses: actions/checkout@v2
 
       - name: 📥 Install dependencies
         run: pnpm install
@@ -31,16 +42,12 @@ jobs:
   typecheck:
     name: ʦ TypeScript
     runs-on: ubuntu-latest
+    needs: setup
     steps:
       - name: ⬇️ Checkout repo
         uses: actions/checkout@v2
 
-      - name: ⎔ Setup node
-        uses: actions/setup-node@v3
-        with:
-          node-version: 16
-
-      - name: 📥 Download deps
+      - name: 📥 Install dependencies
         run: pnpm install
 
       - name: 🔎 Type check
@@ -49,16 +56,12 @@ jobs:
   prettier:
     name: 💅 Prettier
     runs-on: ubuntu-latest
+    needs: setup
     steps:
       - name: ⬇️ Checkout repo
         uses: actions/checkout@v2
 
-      - name: ⎔ Setup node
-        uses: actions/setup-node@v3
-        with:
-          node-version: 16
-
-      - name: 📥 Download deps
+      - name: 📥 Install dependencies
         run: pnpm install
 
       - name: 💅 Prettier check
@@ -67,17 +70,10 @@ jobs:
   # test:
   #   name: 🃏 Test
   #   runs-on: ubuntu-latest
+  #   needs: setup
   #   steps:
   #     - name: ⬇️ Checkout repo
   #       uses: actions/checkout@v2
-
-  #     - name: ⎔ Setup node
-  #       uses: actions/setup-node@v3
-  #       with:
-  #         node-version: 16
-
-  #     - name: 📥 Download deps
-  #       run: npm install -g pnpm
 
   #     - name: 🃏 Run jest
   #       run: pnpm test
