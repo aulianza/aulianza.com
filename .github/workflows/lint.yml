@@ -23,7 +23,7 @@ jobs:
           node-version: 16
 
       - name: 📥 Download deps
-        uses: bahmutov/npm-install@v1
+        run: npm install -g pnpm
 
       - name: 🔬 Lint
         run: pnpm lint
@@ -41,7 +41,7 @@ jobs:
           node-version: 16
 
       - name: 📥 Download deps
-        uses: bahmutov/npm-install@v1
+        run: npm install -g pnpm
 
       - name: 🔎 Type check
         run: pnpm typecheck
@@ -59,7 +59,7 @@ jobs:
           node-version: 16
 
       - name: 📥 Download deps
-        uses: bahmutov/npm-install@v1
+        run: npm install -g pnpm
 
       - name: 💅 Prettier check
         run: pnpm format:check
@@ -77,7 +77,7 @@ jobs:
   #         node-version: 16
 
   #     - name: 📥 Download deps
-  #       uses: bahmutov/npm-install@v1
+  #       run: npm install -g pnpm
 
   #     - name: 🃏 Run jest
   #       run: pnpm test
