@@ -1,6 +1,6 @@
 ## Description
 
-[//]: # 'Provide a detailed description of the changes made in this pull request'
+[//]: # "Provide a detailed description of the changes made in this pull request"
 
 ## Related Issue
 
@@ -8,7 +8,7 @@
 
 ## Proposed Changes
 
-[//]: # 'List the changes made in this pull request, along with any additional information that may be helpful for reviewers'
+[//]: # "List the changes made in this pull request, along with any additional information that may be helpful for reviewers"
 
 ## Checklist
 
@@ -23,8 +23,8 @@ Please make sure that your pull request meets the following requirements:
 
 ## Screenshots (if applicable)
 
-[//]: # 'Include any relevant screenshots or GIFs to demonstrate the changes made'
+[//]: # "Include any relevant screenshots or GIFs to demonstrate the changes made"
 
 ## Additional Notes
 
-[//]: # 'Add any additional notes or context that may be relevant to the reviewers'
+[//]: # "Add any additional notes or context that may be relevant to the reviewers"
