@@ -8,9 +8,9 @@ const sora = Sora({ subsets: ["latin"] });
 export const metadata: Metadata = {
   title: "Ryan Aulia - Aulianza Landing Page",
   description: "My Personal Landing Page",
-  icons: "/images/aulianza.png",
+  icons: "/images/aulianza.webp",
   // openGraph: {
-  //   images: "/images/aulianza.png",
+  //   images: "/images/aulianza.webp",
   //   url: "https://aulianza.com",
   //   siteName: "Ryan Aulia - Aulianza Landing Page",
   //   type: "website",
