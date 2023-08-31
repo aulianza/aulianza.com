@@ -1,3 +1,5 @@
+"use client";
+
 import Image from "@/common/components/Image";
 import VerifiedIcon from "@/common/components/VerifiedIcon";
 

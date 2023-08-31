@@ -1,15 +1,10 @@
-import dynamic from "next/dynamic";
-
 import PageWrapper from "@/common/components/PageWrapper";
-
-const DynamicContent = dynamic(() => import("@/modules/homepage"), {
-  loading: () => <p>Loading...</p>,
-});
+import Home from "@/modules/homepage";
 
 export default function HomePage() {
   return (
     <PageWrapper>
-      <DynamicContent />
+      <Home />
     </PageWrapper>
   );
 }

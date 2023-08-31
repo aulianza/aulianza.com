@@ -27,39 +27,39 @@ const LINKS: LinkProps[] = [
 ];
 
 const ButtonLink = () => {
-  const [isOpen, setOpen] = useState(false);
+  const [isBottomSheetOpen, setBottomSheetOpen] = useState(false);
 
   const handleClick = (url: string, target: string | undefined) => {
     if (url !== "#") {
       window.open(url, target);
     } else {
-      setOpen(true);
+      setBottomSheetOpen(true);
     }
   };
 
   return (
     <>
       <div className="flex flex-col md:flex-row gap-3 items-center justify-center py-3">
-        {LINKS.map((item, index) => (
+        {LINKS?.map((item, index) => (
           <button
             key={index}
             className={clsx(
               "flex items-center justify-center gap-x-2 py-3 px-5 rounded-xl hover:gap-x-3 transition-all duration-300 w-full md:w-max shadow-sm",
-              item?.className,
+              item.className,
             )}
-            onClick={() => handleClick(item?.href, item?.target)}
+            onClick={() => handleClick(item.href, item.target)}
           >
-            {item?.icon && item?.icon}
-            <span>{item?.label}</span>
+            {item.icon}
+            <span>{item.label}</span>
           </button>
         ))}
       </div>
 
       <BottomSheet
-        key={isOpen ? "bottom-sheet-open" : "bottom-sheet-closed"}
+        key={isBottomSheetOpen ? "bottom-sheet-open" : "bottom-sheet-closed"}
         title="Buy me a Coffee"
-        isOpen={isOpen}
-        onClose={setOpen}
+        isOpen={isBottomSheetOpen}
+        onClose={() => setBottomSheetOpen(false)}
       >
         <BuyACoffee />
       </BottomSheet>
