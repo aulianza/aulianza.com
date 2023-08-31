@@ -10,6 +10,7 @@ const PageWrapper = ({ children }: { children: React.ReactNode }) => {
     AOS.init({
       duration: 800,
       delay: 50,
+      disable: "mobile",
     });
   }, []);
 

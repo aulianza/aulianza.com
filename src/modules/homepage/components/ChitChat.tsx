@@ -12,8 +12,10 @@ const ChitChat = () => {
     >
       <div className="flex gap-5 items-start justify-between">
         <div className="space-y-1">
-          <div className="text-lg font-medium">1 on 1 Chit-chat Session</div>
-          <p className="text-neutral-400">
+          <div className="text-base md:text-lg font-medium">
+            1 on 1 Chit-chat Session
+          </div>
+          <p className="text-neutral-400 text-sm md:text-base">
             Let’s find some time to talk about anything!{" "}
           </p>
         </div>
