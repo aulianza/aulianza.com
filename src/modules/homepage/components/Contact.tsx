@@ -19,7 +19,7 @@ const Contact = () => {
   };
 
   return (
-    <div className="space-y-5">
+    <div className="space-y-4">
       <div className="flex items-center gap-2 px-3">
         <ContactIcon size={26} />
         <h2 className="font-medium text-xl">Get in Touch</h2>
@@ -32,15 +32,15 @@ const Contact = () => {
       >
         <EmailIcon size={24} className="text-neutral-800" />
         <div className="space-y-3">
-          <h6 className="font-medium text-xl">Drop Me an Email</h6>
+          <h6 className="font-medium text-lg md:text-xl">Drop Me an Email</h6>
           <div
-            className="hover:underline text-neutral-800 text-lg"
+            className="hover:underline text-neutral-800 text-lg md:text-lg"
             onClick={() => handleEmailClick("aulianza.dev@gmail.com")}
           >
             {copiedEmail ? "Copied!" : "aulianza.dev@gmail.com"}
           </div>
         </div>
-        <p className="text-sm text-neutral-600 leading-relaxed">
+        <p className="text-sm md:text-base text-neutral-600 leading-relaxed">
           Expect my rapid and eager reply – your message won't be kept waiting!
         </p>
       </div>

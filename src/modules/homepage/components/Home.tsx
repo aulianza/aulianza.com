@@ -10,7 +10,7 @@ import Socials from "./Socials";
 
 const Home = () => {
   return (
-    <div className="p-6 mb-16 space-y-6" data-aos="fade-down">
+    <div className="p-6 mb-2 space-y-6" data-aos="fade-down">
       <Hero />
       <Socials />
       <ButtonLink />

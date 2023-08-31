@@ -9,12 +9,12 @@ export const metadata: Metadata = {
   title: "Ryan Aulia - Aulianza Landing Page",
   description: "My Personal Landing Page",
   icons: "/images/aulianza.png",
-  openGraph: {
-    images: "/images/aulianza.png",
-    url: "https://aulianza.com",
-    siteName: "Ryan Aulia - Aulianza Landing Page",
-    type: "website",
-  },
+  // openGraph: {
+  //   images: "/images/aulianza.png",
+  //   url: "https://aulianza.com",
+  //   siteName: "Ryan Aulia - Aulianza Landing Page",
+  //   type: "website",
+  // },
 };
 
 export default function RootLayout({
