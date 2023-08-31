@@ -1,5 +1,6 @@
 import type { Metadata } from "next";
 import { Sora } from "next/font/google";
+import Script from "next/script";
 
 import "./globals.css";
 
@@ -24,6 +25,10 @@ export default function RootLayout({
 }) {
   return (
     <html lang="en" suppressHydrationWarning>
+      <Script
+        src="https://umami.aulianza.id/script.js"
+        data-website-id="c2ee1939-526f-4607-9cfb-cc19817333cf"
+      />
       <body className={sora.className}>
         <div className="max-w-xl mx-auto">{children}</div>
       </body>
