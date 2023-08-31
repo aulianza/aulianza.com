@@ -40,7 +40,7 @@ const Contact = () => {
             {copiedEmail ? "Copied!" : "aulianza.dev@gmail.com"}
           </div>
         </div>
-        <p className="text-sm md:text-base text-neutral-600 leading-relaxed">
+        <p className="text-sm md:text-base text-neutral-700 leading-relaxed">
           Expect my rapid and eager reply – your message won't be kept waiting!
         </p>
       </div>

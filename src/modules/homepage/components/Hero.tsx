@@ -23,7 +23,7 @@ const Hero = () => {
           <h1 className="text-2xl font-medium">Ryan Aulia</h1>
           <VerifiedIcon />
         </div>
-        <p className="text-center">
+        <p className="text-center text-[15px] md:text-base mx-1 leading-relaxed">
           Seasoned software engineer especially in frontend side, with a passion
           for creating pixel-perfect web experiences.
         </p>
