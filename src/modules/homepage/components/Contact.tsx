@@ -32,7 +32,7 @@ const Contact = () => {
       >
         <EmailIcon size={24} className="text-neutral-800" />
         <div className="space-y-3">
-          <h6 className="font-medium text-lg md:text-xl">Drop Me an Email</h6>
+          <div className="font-medium text-lg md:text-xl">Drop Me an Email</div>
           <div
             className="hover:underline text-neutral-800 text-lg md:text-lg"
             onClick={() => handleEmailClick("aulianza.dev@gmail.com")}
