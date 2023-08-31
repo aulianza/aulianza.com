@@ -4,9 +4,27 @@
 </div>
 <br />
 
+![3-devices-white](https://github.com/aulianza/aulianza.com/assets/15605885/2d1079d4-973b-417e-8b6d-d5ae93831dc7)
+<br />
+
 ## Introduction
 
 This website was built from scratch using Next.js 13 App Router and was first initialized in August 2023. It will undergo regular updates in the future.
+<br /><br />
+
+## Performance
+
+### PageSpeed Insights : Desktop
+
+Report URL: https://pagespeed.web.dev/analysis/https-aulianza-com/9626wfhfal?form_factor=desktop
+
+![image](https://github.com/aulianza/aulianza.com/assets/15605885/1d67a286-eb47-41f7-9f62-d47875b4ff1b)
+
+### PageSpeed Insights : Mobile
+
+Report URL: https://pagespeed.web.dev/analysis/https-aulianza-com/9626wfhfal?form_factor=mobile
+
+![image](https://github.com/aulianza/aulianza.com/assets/15605885/aebcd382-82c2-402e-a681-80358ef6fb6f)
 <br /><br />
 
 ## Getting Started
