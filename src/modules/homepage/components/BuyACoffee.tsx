@@ -21,7 +21,7 @@ const BuyACoffee: React.FC = () => {
             onClick={handleShowQris}
           >
             <Image
-              src="/images/qris-logo.png"
+              src="/images/qris-logo.webp"
               alt="QRIS"
               width={70}
               height={50}
@@ -29,12 +29,12 @@ const BuyACoffee: React.FC = () => {
           </button>
           <PaymentMethodButton
             href="https://www.paypal.com/paypalme/aulianza01"
-            imageSrc="/images/paypal.png"
+            imageSrc="/images/paypal.webp"
             altText="PayPal"
           />
           <PaymentMethodButton
             href="https://wise.com/share/ryana1181"
-            imageSrc="/images/wise.png"
+            imageSrc="/images/wise.webp"
             altText="Wise"
           />
         </div>
