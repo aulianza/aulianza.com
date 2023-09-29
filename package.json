@@ -24,7 +24,7 @@
     "tailwindcss": "3.3.3"
   },
   "devDependencies": {
-    "@commitlint/cli": "^17.7.1",
+    "@commitlint/cli": "^17.7.2",
     "@commitlint/config-conventional": "^17.7.0",
     "@types/aos": "^3.0.4",
     "@types/node": "20.5.7",
