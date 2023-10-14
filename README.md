@@ -1,5 +1,5 @@
 <div align="center">
-  <h1>Personal Landing Page</h1>
+  <h1>aulianza.com</h1>
   <p>🌀 Personal landing page built with Next.js 13 App Router, TypeScript and Tailwind CSS.</p>
 </div>
 <br />
@@ -36,13 +36,13 @@ If you are interested in running this project on your local machine, you can do 
 1. Clone using git
 
    ```bash
-   git clone https://github.com/aulianza/personal-landing-page
+   git clone https://github.com/aulianza/aulianza.com
    ```
 
 2. Using `create-next-app`
 
    ```bash
-   npx create-next-app -e https://github.com/aulianza/personal-landing-page project-name
+   npx create-next-app -e https://github.com/aulianza/aulianza.com project-name
    ```
 
 3. Using `degit`
@@ -53,8 +53,8 @@ If you are interested in running this project on your local machine, you can do 
 
 4. Deploy to Vercel or Netlify, etc
 
-   [![Deploy with Vercel](https://vercel.com/button)](https://vercel.com/new/git/external?repository-url=https://github.com/aulianza/personal-landing-page)
-   [![Deploy to Netlify](https://www.netlify.com/img/deploy/button.svg)](https://app.netlify.com/start/deploy?repository=https://github.com/aulianza/personal-landing-page)
+   [![Deploy with Vercel](https://vercel.com/button)](https://vercel.com/new/git/external?repository-url=https://github.com/aulianza/aulianza.com)
+   [![Deploy to Netlify](https://www.netlify.com/img/deploy/button.svg)](https://app.netlify.com/start/deploy?repository=https://github.com/aulianza/aulianza.com)
 
 ### 2. Install dependencies
 
