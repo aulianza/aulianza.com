@@ -4,6 +4,7 @@ import { useState } from "react";
 import { PiLinkBreakDuotone as LinkIcon } from "react-icons/pi";
 
 import BottomSheet from "@/common/components/BottomSheet";
+import SectionHeader from "@/common/components/SectionHeader";
 import { LINKS } from "@/common/constant/links";
 
 import BuyACoffee from "./BuyACoffee";
@@ -21,15 +22,8 @@ const Links = () => {
   };
 
   return (
-    <>
-      <div
-        className="flex items-center gap-2 px-3"
-        data-aos="flip-down"
-        data-aos-duration="1000"
-      >
-        <LinkIcon size={24} />
-        <h2 className="font-medium text-neutral-600">Links</h2>
-      </div>
+    <section className="space-y-4">
+      <SectionHeader icon={<LinkIcon size={24} />} title="Links" />
       <div className="flex flex-col w-full gap-y-3">
         {LINKS?.map((item, index) => (
           <LinkItem key={index} index={index} onClick={handleClick} {...item} />
@@ -44,7 +38,7 @@ const Links = () => {
       >
         <BuyACoffee />
       </BottomSheet>
-    </>
+    </section>
   );
 };
 

@@ -4,6 +4,8 @@ import { useState } from "react";
 import { FaRegEnvelopeOpen as EmailIcon } from "react-icons/fa";
 import { PiConfettiDuotone as ContactIcon } from "react-icons/pi";
 
+import SectionHeader from "@/common/components/SectionHeader";
+
 const Contact = () => {
   const bgImage = "url('/images/bg-gradient-2.svg')";
 
@@ -19,15 +21,8 @@ const Contact = () => {
   };
 
   return (
-    <>
-      <div
-        className="flex items-center gap-2 px-3"
-        data-aos="flip-down"
-        data-aos-duration="1000"
-      >
-        <ContactIcon size={24} />
-        <h2 className="font-medium text-neutral-600">Get in Touch</h2>
-      </div>
+    <section className="space-y-5">
+      <SectionHeader icon={<ContactIcon size={24} />} title="Get in touch" />
       <div
         className="bg-[#94d7c5] text-neutral-900 border p-8 rounded-xl space-y-5 bg-no-repeat bg-right"
         style={{ backgroundImage: bgImage }}
@@ -48,7 +43,7 @@ const Contact = () => {
           Expect my rapid and eager reply – your message won't be kept waiting!
         </p>
       </div>
-    </>
+    </section>
   );
 };
 

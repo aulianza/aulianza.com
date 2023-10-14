@@ -5,6 +5,8 @@ import Script from "next/script";
 
 import "./globals.css";
 
+import Footer from "@/common/components/Footer";
+
 const sora = Sora({ subsets: ["latin"] });
 
 export const metadata: Metadata = {
@@ -31,8 +33,9 @@ export default function RootLayout({
         data-website-id="c2ee1939-526f-4607-9cfb-cc19817333cf"
       />
       <body className={clsx(sora.className)}>
-        <div className="max-w-[480px] mx-auto bg-white md:shadow-xl md:rounded-lg">
+        <div className="max-w-[480px] mx-auto bg-white md:shadow-xl md:rounded-lg md:my-3 ">
           {children}
+          <Footer />
         </div>
       </body>
     </html>

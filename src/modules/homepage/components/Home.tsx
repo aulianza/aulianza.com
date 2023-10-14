@@ -1,5 +1,4 @@
 import Breakline from "@/common/components/Breakline";
-import Footer from "@/common/components/Footer";
 
 import Contact from "./Contact";
 import Hero from "./Hero";
@@ -15,7 +14,6 @@ const Home = () => {
       <Links />
       <Breakline />
       <Contact />
-      <Footer />
     </>
   );
 };
