@@ -1,11 +1,10 @@
-import { BiAt as ThreadsIcon } from "react-icons/bi";
 import {
   BsGithub as GithubIcon,
   BsInstagram as InstagramIcon,
   BsLinkedin as LinkedinIcon,
   BsRssFill as BlogIcon,
-  BsTwitter as TwitterIcon,
 } from "react-icons/bs";
+import { RiTwitterXFill as TwitterXIcon } from "react-icons/ri";
 
 import { SocialItemProps } from "../types/socials";
 
@@ -19,7 +18,7 @@ export const SOCIAL_MEDIA: SocialItemProps[] = [
     isShow: true,
     isExternal: true,
     eventName: "Social: Github",
-    className: "hover:text-black",
+    className: "hover:bg-black",
   },
   {
     title: "Linkedin",
@@ -28,16 +27,16 @@ export const SOCIAL_MEDIA: SocialItemProps[] = [
     isShow: true,
     isExternal: true,
     eventName: "Social: Linkedin",
-    className: "hover:text-blue-700",
+    className: "hover:bg-blue-600",
   },
   {
-    title: "Twitter",
-    href: "https://twitter.com/aulianzaa",
-    icon: <TwitterIcon size={iconSize} />,
+    title: "X",
+    href: "https://x.com/aulianzaa",
+    icon: <TwitterXIcon size={iconSize} />,
     isShow: true,
     isExternal: true,
-    eventName: "Social: Twitter",
-    className: "hover:text-sky-500",
+    eventName: "Social: X",
+    className: "hover:bg-black",
   },
   {
     title: "Instagram",
@@ -46,16 +45,7 @@ export const SOCIAL_MEDIA: SocialItemProps[] = [
     isShow: true,
     isExternal: true,
     eventName: "Social: Instagram",
-    className: "hover:text-amber-800",
-  },
-  {
-    title: "Threads",
-    href: "https://www.threads.net/@aulianza",
-    icon: <ThreadsIcon size={iconSize} />,
-    isShow: true,
-    isExternal: true,
-    eventName: "Social: Threads",
-    className: "hover:text-black",
+    className: "hover:bg-amber-700",
   },
   {
     title: "Blog",
@@ -64,6 +54,6 @@ export const SOCIAL_MEDIA: SocialItemProps[] = [
     isShow: true,
     isExternal: true,
     eventName: "Social: Blog",
-    className: "hover:text-orange-600",
+    className: "hover:bg-orange-500",
   },
 ];

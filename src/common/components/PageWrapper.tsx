@@ -15,7 +15,7 @@ const PageWrapper = ({ children }: { children: React.ReactNode }) => {
     });
   }, []);
 
-  return <main>{children}</main>;
+  return <main className="p-6 md:my-3 space-y-5">{children}</main>;
 };
 
 export default PageWrapper;
