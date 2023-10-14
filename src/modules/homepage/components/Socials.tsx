@@ -25,6 +25,7 @@ const Socials = () => {
             data-aos="zoom-in"
             data-aos-duration="1000"
             data-aos-delay={index * 100}
+            title={item?.title}
           >
             {item?.icon}
           </a>

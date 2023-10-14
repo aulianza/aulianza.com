@@ -1,9 +1,9 @@
 import Breakline from "@/common/components/Breakline";
 import Footer from "@/common/components/Footer";
 
-import ButtonLink from "./ButtonLink";
 import Contact from "./Contact";
 import Hero from "./Hero";
+import Links from "./Links";
 import Socials from "./Socials";
 
 const Home = () => {
@@ -12,7 +12,7 @@ const Home = () => {
       <Hero />
       <Socials />
       <Breakline />
-      <ButtonLink />
+      <Links />
       <Breakline />
       <Contact />
       <Footer />

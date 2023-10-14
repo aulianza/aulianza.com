@@ -18,7 +18,7 @@ export const SOCIAL_MEDIA: SocialItemProps[] = [
     isShow: true,
     isExternal: true,
     eventName: "Social: Github",
-    className: "hover:bg-black",
+    className: "text-slate-800 hover:bg-slate-800",
   },
   {
     title: "Linkedin",
@@ -27,16 +27,7 @@ export const SOCIAL_MEDIA: SocialItemProps[] = [
     isShow: true,
     isExternal: true,
     eventName: "Social: Linkedin",
-    className: "hover:bg-blue-600",
-  },
-  {
-    title: "X",
-    href: "https://x.com/aulianzaa",
-    icon: <TwitterXIcon size={iconSize} />,
-    isShow: true,
-    isExternal: true,
-    eventName: "Social: X",
-    className: "hover:bg-black",
+    className: "text-blue-600 hover:bg-blue-600",
   },
   {
     title: "Instagram",
@@ -45,7 +36,16 @@ export const SOCIAL_MEDIA: SocialItemProps[] = [
     isShow: true,
     isExternal: true,
     eventName: "Social: Instagram",
-    className: "hover:bg-amber-700",
+    className: "text-pink-600 hover:bg-pink-600",
+  },
+  {
+    title: "X",
+    href: "https://x.com/aulianzaa",
+    icon: <TwitterXIcon size={19} />,
+    isShow: true,
+    isExternal: true,
+    eventName: "Social: X",
+    className: "hover:bg-black",
   },
   {
     title: "Blog",
@@ -54,6 +54,6 @@ export const SOCIAL_MEDIA: SocialItemProps[] = [
     isShow: true,
     isExternal: true,
     eventName: "Social: Blog",
-    className: "hover:bg-orange-500",
+    className: "text-orange-500 hover:bg-orange-500",
   },
 ];
