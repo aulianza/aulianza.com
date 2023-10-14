@@ -1,5 +1,5 @@
 <div align="center">
-  <h1>aulianza.com</h1>
+  <h1>Personal Landing Page</h1>
   <p>🌀 Personal landing page built with Next.js 13 App Router, TypeScript and Tailwind CSS.</p>
 </div>
 <br />
