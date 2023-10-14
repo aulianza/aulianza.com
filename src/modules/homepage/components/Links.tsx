@@ -32,7 +32,7 @@ const Links = () => {
       </div>
       <div className="flex flex-col w-full gap-y-3">
         {LINKS?.map((item, index) => (
-          <LinkItem key={index} onClick={handleClick} {...item} />
+          <LinkItem key={index} index={index} onClick={handleClick} {...item} />
         ))}
       </div>
 

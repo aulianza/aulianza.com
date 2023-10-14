@@ -5,12 +5,12 @@ import { clsx } from "clsx";
 import { LinkProps } from "@/common/types/link";
 
 interface LinkItemProps extends LinkProps {
-  key: number;
+  index: number;
   onClick: (href: string, target: string) => void;
 }
 
 const LinkItem = ({
-  key,
+  index,
   label,
   icon,
   href,
@@ -24,7 +24,7 @@ const LinkItem = ({
       className="relative inline-flex items-center justify-start py-4 pl-4 pr-14 overflow-hidden font-medium text-neutral-800 transition-all duration-150 ease-in-out rounded-lg hover:pl-12 hover:pr-6 bg-white group border shadow-sm"
       data-aos="fade-down"
       data-aos-duration="1000"
-      data-aos-delay={key * 100}
+      data-aos-delay={index * 100}
     >
       <span
         className={clsx(
