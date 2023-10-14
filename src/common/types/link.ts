@@ -1,5 +1,3 @@
-import React from "react";
-
 export interface LinkProps {
   label: string;
   href: string;

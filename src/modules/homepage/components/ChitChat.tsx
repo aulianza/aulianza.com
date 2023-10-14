@@ -4,7 +4,7 @@ import { PiChatCircleTextDuotone as SessionIcon } from "react-icons/pi";
 
 const ChitChat = () => {
   return (
-    <>
+    <section>
       <div
         className="flex items-center gap-2 px-3"
         data-aos="flip-down"
@@ -44,7 +44,7 @@ const ChitChat = () => {
           </div>
         </div>
       </Link>
-    </>
+    </section>
   );
 };
 

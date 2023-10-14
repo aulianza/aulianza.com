@@ -6,7 +6,7 @@ const Socials = () => {
   const socialMedia = SOCIAL_MEDIA ?? [];
 
   return (
-    <div className="flex justify-center gap-x-3">
+    <section className="flex justify-center gap-x-3">
       {socialMedia.map((item, index) => {
         return (
           <a
@@ -31,7 +31,7 @@ const Socials = () => {
           </a>
         );
       })}
-    </div>
+    </section>
   );
 };
 

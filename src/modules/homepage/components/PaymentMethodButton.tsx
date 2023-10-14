@@ -14,7 +14,7 @@ const PaymentMethodButton: React.FC<PaymentMethodButtonProps> = ({
   altText,
 }) => (
   <Link href={href} target="_blank" className="w-full">
-    <button className="flex justify-center border border-solid w-full px-5 py-3 rounded-xl hover:bg-gray-100">
+    <button className="flex justify-center border border-solid w-full px-5 py-3 rounded-xl hover:border-gray-400">
       <Image src={imageSrc} alt={altText} width={90} height={40} />
     </button>
   </Link>
