@@ -12,8 +12,8 @@ const Qris = ({ onBack }: { onBack: () => void }) => {
 
   return (
     <>
-      <Image src="/images/qris-long.webp" alt="QRIS" width={300} height={50} />
-      <Image src="/images/qris.svg" alt="QRIS" width={500} height={500} />
+      <Image src="/images/qris-long.webp" alt="QRIS" width={200} height={50} />
+      <Image src="/images/qris.svg" alt="QRIS" width={300} height={300} />
       <div className="flex w-full px-3 gap-3">
         <button
           onClick={onBack}
