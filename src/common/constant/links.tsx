@@ -21,7 +21,7 @@ export const LINKS: LinkProps[] = [
     icon: <PDFIcon size={21} className="text-neutral-600" />,
     href: "https://bit.ly/cv-aulianza",
     className: "bg-emerald-600",
-    target: "_self",
+    target: "_blank",
   },
   {
     label: "1 on 1 Chit Chat Session",
