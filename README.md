@@ -4,8 +4,9 @@
 </div>
 <br />
 
+<div align="center">
 <img width="482" alt="image" src="https://github.com/aulianza/aulianza.com/assets/15605885/32e8bc07-4f85-4507-bd59-60eee78a3b48">
-<img width="482" alt="image" src="https://github.com/aulianza/aulianza.com/assets/15605885/32e8bc07-4f85-4507-bd59-60eee78a3b48">
+</div>
 
 <br />
 
