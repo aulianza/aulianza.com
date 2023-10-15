@@ -4,7 +4,9 @@
 </div>
 <br />
 
-![3-devices-white](https://github.com/aulianza/aulianza.com/assets/15605885/2d1079d4-973b-417e-8b6d-d5ae93831dc7)
+<img width="482" alt="image" src="https://github.com/aulianza/aulianza.com/assets/15605885/32e8bc07-4f85-4507-bd59-60eee78a3b48">
+<img width="482" alt="image" src="https://github.com/aulianza/aulianza.com/assets/15605885/32e8bc07-4f85-4507-bd59-60eee78a3b48">
+
 <br />
 
 ## Introduction
