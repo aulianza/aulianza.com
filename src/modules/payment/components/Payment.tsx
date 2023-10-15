@@ -4,7 +4,7 @@ import BankTransfer from "./BankTransfer";
 
 const Payment = () => {
   return (
-    <section className="space-y-6">
+    <section className="p-6 space-y-6">
       <PageHeader title="Bank Transfer (IDR)" />
       <BankTransfer />
     </section>

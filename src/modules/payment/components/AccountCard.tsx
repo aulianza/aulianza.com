@@ -12,6 +12,7 @@ const AccountCard = ({
   number,
   holder,
   logo,
+  type,
   color,
   className,
 }: BankAccountsProps) => {
@@ -43,7 +44,7 @@ const AccountCard = ({
       style={{
         backgroundImage: gradientCard,
         backgroundPosition: "right top, center",
-        backgroundSize: "85%, cover",
+        backgroundSize: "88%, cover",
       }}
     >
       <div className="flex justify-between items-start">
@@ -85,10 +86,10 @@ const AccountCard = ({
             <span className="text-base uppercase font-medium">{holder}</span>
           </div>
           <Image
-            src="/images/payment/mastercard.png"
+            src={`/images/payment/${type}.png`}
             alt={bank}
-            height={80}
-            width={60}
+            height={85}
+            width={65}
           />
         </div>
       </div>

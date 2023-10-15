@@ -27,7 +27,7 @@ export const SOCIAL_MEDIA: SocialItemProps[] = [
     isShow: true,
     isExternal: true,
     eventName: "Social: Linkedin",
-    className: "text-blue-600 hover:bg-blue-600",
+    className: "text-[#0b66c2] hover:bg-[#0b66c2]",
   },
   {
     title: "Instagram",

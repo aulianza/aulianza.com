@@ -13,14 +13,14 @@ export const LINKS: LinkProps[] = [
     label: "Personal Website & Portfolio",
     icon: <WebsiteIcon size={21} className="text-neutral-600" />,
     href: "https://aulianza.id",
-    className: "bg-sky-600",
+    className: "bg-emerald-700",
     target: "_blank",
   },
   {
     label: "Resume & Curriculum Vitae",
     icon: <PDFIcon size={21} className="text-neutral-600" />,
     href: "https://bit.ly/cv-aulianza",
-    className: "bg-emerald-600",
+    className: "bg-sky-700",
     target: "_blank",
   },
   {

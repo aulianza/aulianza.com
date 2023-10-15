@@ -9,11 +9,13 @@ const Home = () => {
   return (
     <>
       <Hero />
-      <Socials />
-      <Breakline />
-      <Links />
-      <Breakline />
-      <Contact />
+      <div className="p-6 space-y-5">
+        <Socials />
+        <Breakline />
+        <Links />
+        <Breakline />
+        <Contact />
+      </div>
     </>
   );
 };
