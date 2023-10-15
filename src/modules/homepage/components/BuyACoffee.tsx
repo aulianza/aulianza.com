@@ -20,6 +20,7 @@ const BuyACoffee: React.FC = () => {
           <button
             className="flex justify-center border border-solid w-full px-5 py-3 rounded-xl hover:border-gray-400"
             onClick={handleShowQris}
+            data-umami-event="Click : QRIS"
           >
             <Image
               src="/images/qris-logo.webp"
@@ -37,6 +38,7 @@ const BuyACoffee: React.FC = () => {
               alt="Bank Transfer"
               width={150}
               height={80}
+              data-umami-event="Click : Bank Transfer"
             />
           </Link>
           {/* <PaymentMethodButton

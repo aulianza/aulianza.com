@@ -35,6 +35,7 @@ const Contact = () => {
           <div
             className="hover:underline text-neutral-800 text-lg md:text-lg cursor-pointer"
             onClick={() => handleEmailClick("aulianza.dev@gmail.com")}
+            data-umami-event="Click : Email"
           >
             {copiedEmail ? "Copied!" : "aulianza.dev@gmail.com"}
           </div>

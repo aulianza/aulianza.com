@@ -26,6 +26,7 @@ const Socials = () => {
             data-aos-duration="1000"
             data-aos-delay={index * 100}
             title={item?.title}
+            data-umami-event={`Click Socials: ${item?.title}`}
           >
             {item?.icon}
           </a>

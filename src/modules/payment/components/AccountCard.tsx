@@ -71,6 +71,7 @@ const AccountCard = ({
             <div
               className="flex items-center gap-1 cursor-pointer text-xs border py-1 px-1.5 rounded-full border-neutral-300 group-hover:border-white"
               onClick={handleCopy}
+              data-umami-event={`Copy : Account Number ${bank}`}
             >
               <CopyIcon size={14} />
               <span>Copy</span>
