@@ -19,15 +19,15 @@ This website was built from scratch using Next.js 13 App Router and was first in
 
 ### PageSpeed Insights : Desktop
 
-Report URL: https://pagespeed.web.dev/analysis/https-aulianza-com/9626wfhfal?form_factor=desktop
+Report URL: https://pagespeed.web.dev/analysis/https-aulianza-com/ucae0fj9zq?form_factor=desktop
 
-![image](https://github.com/aulianza/aulianza.com/assets/15605885/1d67a286-eb47-41f7-9f62-d47875b4ff1b)
+<img width="907" alt="image" src="https://github.com/aulianza/aulianza.com/assets/15605885/0f3c3141-d038-4b1e-9408-c2b98ffc533e">
 
 ### PageSpeed Insights : Mobile
 
-Report URL: https://pagespeed.web.dev/analysis/https-aulianza-com/9626wfhfal?form_factor=mobile
+Report URL: https://pagespeed.web.dev/analysis/https-aulianza-com/rnlhdur5ou?form_factor=mobile
 
-![image](https://github.com/aulianza/aulianza.com/assets/15605885/aebcd382-82c2-402e-a681-80358ef6fb6f)
+<img width="901" alt="image" src="https://github.com/aulianza/aulianza.com/assets/15605885/2207ab4f-a34d-4ce2-8712-3a8120e3f4ba">
 <br /><br />
 
 ## Getting Started
