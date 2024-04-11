@@ -14,9 +14,9 @@ const BuyACoffee: React.FC = () => {
   };
 
   return (
-    <div className="p-6 flex flex-col justify-center items-center space-y-3">
+    <div className="flex flex-col justify-center items-center">
       {!showQris ? (
-        <div className="flex flex-col w-full justify-center items-center space-y-3">
+        <div className="p-6 flex flex-col w-full justify-center items-center space-y-3">
           <button
             className="flex justify-center border border-solid w-full px-5 py-3 rounded-xl hover:border-gray-400"
             onClick={handleShowQris}
@@ -41,16 +41,6 @@ const BuyACoffee: React.FC = () => {
               data-umami-event="Click : Bank Transfer"
             />
           </Link>
-          {/* <PaymentMethodButton
-						href="https://www.paypal.com/paypalme/aulianza01"
-						imageSrc="/images/paypal.webp"
-						altText="PayPal"
-					/> */}
-          <PaymentMethodButton
-            href="https://wise.com/share/ryana1181"
-            imageSrc="/images/wise.webp"
-            altText="Wise"
-          />
         </div>
       ) : (
         <Qris onBack={handleShowQris} />

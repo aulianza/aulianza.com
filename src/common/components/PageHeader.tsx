@@ -11,7 +11,7 @@ const PageHeader = ({ title }: PageHeaderProps) => {
   const router = useRouter();
 
   return (
-    <div className="flex items-center gap-4">
+    <div className="sticky top-0 z-50 flex items-center gap-4 bg-white py-5">
       <button
         onClick={() => router.push("/")}
         className="flex w-auto items-center justify-center gap-x-2 p-2 rounded-full hover:gap-x-3 transition-all duration-300 border-2 border-neutral-500 hover:border-neutral-900"

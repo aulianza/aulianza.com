@@ -20,7 +20,7 @@ const AccountCard = ({
 
   const gradientCard = isHovered
     ? "url('/images/bg-gradient-1.svg'), url('/images/shiny_card_animated.svg')"
-    : "url('/images/bg-gradient-1.svg')";
+    : "";
 
   const handleCopy = async () => {
     try {
@@ -34,18 +34,13 @@ const AccountCard = ({
   return (
     <div
       className={clsx(
-        "flex flex-col justify-between p-5 border rounded-xl h-56 bg-no-repeat ",
+        "flex flex-col justify-between p-5 border rounded-xl h-36 bg-no-repeat ",
         "transition-all duration-300",
         "hover:scale-[103%] group",
         className,
       )}
       onMouseEnter={() => setIsHovered(true)}
       onMouseLeave={() => setIsHovered(false)}
-      style={{
-        backgroundImage: gradientCard,
-        backgroundPosition: "right top, center",
-        backgroundSize: "88%, cover",
-      }}
     >
       <div className="flex justify-between items-start">
         <div
@@ -54,7 +49,6 @@ const AccountCard = ({
         >
           {bank}
         </div>
-        <Image src={logo} alt={bank} height={55} width={55} />
       </div>
 
       <div className="flex flex-col gap-8">
@@ -79,20 +73,14 @@ const AccountCard = ({
           </div>
         </div>
 
-        <div className="flex justify-between items-end">
-          <div className="flex flex-col flex-grow gap-y-0.5">
-            <span className="text-xs font-light opacity-80">
-              ACCOUNT HOLDER
-            </span>
-            <span className="text-base uppercase font-medium">{holder}</span>
-          </div>
-          <Image
-            src={`/images/payment/${type}.png`}
-            alt={bank}
-            height={85}
-            width={65}
-          />
-        </div>
+        {/* <div className="flex justify-between items-end">
+					<div className="flex flex-col flex-grow gap-y-0.5">
+						<span className="text-xs font-light opacity-80">
+							ACCOUNT HOLDER
+						</span>
+						<span className="text-base uppercase font-medium">{holder}</span>
+					</div>
+				</div> */}
       </div>
     </div>
   );

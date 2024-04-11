@@ -12,9 +12,13 @@ const Qris = ({ onBack }: { onBack: () => void }) => {
 
   return (
     <>
-      <Image src="/images/qris-long.webp" alt="QRIS" width={200} height={50} />
-      <Image src="/images/qris.svg" alt="QRIS" width={300} height={300} />
-      <div className="flex w-full px-3 gap-3">
+      <Image
+        src="/images/qris-aulianza.webp"
+        alt="QRIS"
+        width={500}
+        height={800}
+      />
+      <div className="p-6 flex w-full gap-5">
         <button
           onClick={onBack}
           className="flex w-auto items-center justify-center gap-x-2 p-3 rounded-full hover:gap-x-3 transition-all duration-300 border-2 border-neutral-500 hover:border-neutral-900"

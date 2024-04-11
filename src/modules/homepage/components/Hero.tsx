@@ -45,10 +45,10 @@ const Hero = () => {
               <span>he/him</span>
             </div>
           </div>
-          <p className="text-center text-neutral-600 text-[15px] md:text-base mx-1.5 leading-relaxed">
+          {/* <p className="text-center text-neutral-600 text-[15px] md:text-base mx-1.5 leading-relaxed">
             Seasoned software engineer especially in frontend side, with a
             passion for creating pixel-perfect web experiences.
-          </p>
+          </p> */}
         </div>
       </div>
     </header>
