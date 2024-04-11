@@ -3,14 +3,29 @@
 @tailwind utilities;
 
 :root {
-  --foreground-rgb: 0, 0, 0;
-  --background-start-rgb: 214, 219, 220;
-  --background-end-rgb: 255, 255, 255;
-  --rsbs-max-w: 30rem;
-  --rsbs-ml: auto;
-  --rsbs-mr: auto;
+	--foreground-rgb: 0, 0, 0;
+	--background-start-rgb: 214, 219, 220;
+	--background-end-rgb: 255, 255, 255;
+	--rsbs-max-w: 30rem;
+	--rsbs-ml: auto;
+	--rsbs-mr: auto;
 }
 
 body {
-  background-color: #eceff3;
+	background-color: #eceff3;
+}
+
+html,
+body {
+	height: 100%;
+}
+
+html {
+	display: table;
+	margin: auto;
+}
+
+body {
+	display: table-cell;
+	vertical-align: middle;
 }
